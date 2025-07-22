@@ -32,7 +32,7 @@ def test_user(db):
         "last_name": "User",
         "email": "test@example.com",
         "username": "testuser",
-        "password": "password123"
+        "password": "Password123"
     }
     user = User.register(db, user_data)
     db.commit()
