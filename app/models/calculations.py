@@ -5,8 +5,7 @@ from sqlalchemy.orm import declarative_base
 import uuid
 from datetime import datetime
 from app.operations import add, subtract, multiply, divide
-
-Base = declarative_base()
+from app.models.base import Base  # Import shared Base
 
 class Calculation(Base):
     __tablename__ = 'calculations'
