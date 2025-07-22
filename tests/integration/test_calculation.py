@@ -4,8 +4,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from uuid import uuid4
 from datetime import datetime
-from app.models.calculation import Calculation, Base
-from app.schemas.calculation_schemas import CalculationCreate, CalculationRead, CalculationType
+from app.models.calculations import Calculation, Base
+from app.schemas.calculation import CalculationCreate, CalculationRead, CalculationType
 from app.models.user import User
 
 # Set up in-memory SQLite database for testing
