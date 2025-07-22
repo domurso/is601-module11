@@ -6,6 +6,7 @@ import uuid
 from datetime import datetime
 from app.operations import add, subtract, multiply, divide
 from app.models.base import Base  # Import shared Base
+from sqlalchemy import DateTime
 
 class Calculation(Base):
     __tablename__ = 'calculations'

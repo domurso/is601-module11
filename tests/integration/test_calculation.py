@@ -4,8 +4,10 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from app.models.base import Base
 from app.models.user import User
-from app.models.calculation import Calculation
+from app.models.calculations import Calculation
 from datetime import datetime
+from sqlalchemy import DateTime
+
 
 # Create a test database engine (e.g., in-memory SQLite for testing)
 engine = create_engine("sqlite:///:memory:", echo=False)
